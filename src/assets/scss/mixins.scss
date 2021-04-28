@@ -1,0 +1,156 @@
+@mixin flex($type:'row', $content:center, $items:center) {
+  display: flex;
+  flex-direction: $type;
+  justify-content: $content;
+  align-items: $items;
+}
+
+@mixin bgCenter($size:contain, $pos:center) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $pos;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin text($color:#000, $size:28, $lineheight:28, $textalign:left) {
+  color: $color;
+  font-size: $size*1px;
+  line-height: $lineheight*1px;
+  text-align: $textalign
+}
+
+@mixin bgi($name) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $name;
+}
+
+@mixin img($width, $height, $size:cover) {
+  @include size($width, $height);
+  @include bgi($size);
+}
+
+@mixin colomnEllipsis($colomn:2) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $colomn;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: normal !important;
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 一像素边框
+// -----------------------------------------------------------------------------
+@mixin top-line($color, $zindex: 1) {
+  content: '';
+  position: absolute;
+  z-index: $zindex;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 2rpx;
+  background-image: linear-gradient(0deg, $color 50%, transparent 50%);
+}
+
+@mixin bottom-line($color, $zindex: 1) {
+  content: '';
+  height: 2rpx;
+  position: absolute;
+  z-index: $zindex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(0deg, $color 50%, transparent 50%);
+}
+
+@mixin left-line($color, $zindex: 1) {
+  content: '';
+  position: absolute;
+  z-index: $zindex;
+  top: 0;
+  left: 0;
+  width: 2rpx;
+  height: 100%;
+  background-image: linear-gradient(to left, $color 50%, transparent 50%);
+}
+
+@mixin right-line($color, $zindex: 1) {
+  content: '';
+  position: absolute;
+  z-index: $zindex;
+  top: 0;
+  right: 0;
+  width: 2rpx;
+  height: 100%;
+  background-image: linear-gradient(to right, $color 50%, transparent 50%);
+}
+
+@mixin right-tringle($color, $width) {
+  content: '';
+  display: inline-block;
+  height: $width;
+  width: $width;
+  border-top: 2rpx solid $color;
+  border-right: 2rpx solid $color;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+@mixin title-triangle {
+  color: #3C3C3C;
+  font-size: 26rpx;
+  font-weight: bold;
+  position: relative;
+
+  &::after {
+    @include right-tringle(#A6A6A6, 16rpx);
+    right: 20rpx;
+    top: 50%;
+    margin-top: -8rpx;
+  }
+}
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+/**
+ * at 点击态
+ */
+ @mixin atActive {
+  transition: background-color 0.3s;
+
+  &:active {
+    background-color: #F0F0F0;
+  }
+}
