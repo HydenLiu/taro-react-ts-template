@@ -1,106 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c83570e7-e3ea-498e-9a9e-246a319ed706" name="默认的" comment="" />
+    <list default="true" id="18e3dea2-04b4-4c7c-875e-29d48b6a0914" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/taro-react-ts-template.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/taro-react-tpl-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$USER_HOME$/Documents/WeChat Files/wxid_00jb93elxufj22/FileStorage/File/2021-04/taro-react-tpl/taro-react-tpl-master/package.json" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1rkBQzEO57xwYwbMX36dugl7Qrp" />
+  <component name="ProjectId" id="1rmw6uoHV7wYsqK4I8FXINGxvFS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/WeChat Files/wxid_00jb93elxufj22/FileStorage/File/2021-04/taro-react-tpl/taro-react-tpl-master/node_modules/stylelint-config-standard" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.stylelint" value="node" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.stylelint" value="C:\Users\staff\Documents\WeChat Files\wxid_00jb93elxufj22\FileStorage\File\2021-04\taro-react-tpl\taro-react-tpl-master\node_modules\stylelint-config-standard" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\staff\Documents\WeChat Files\wxid_00jb93elxufj22\FileStorage\File\2021-04\taro-react-tpl\taro-react-tpl-master\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RunManager">
-    <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$USER_HOME$/Documents/WeChat Files/wxid_00jb93elxufj22/FileStorage/File/2021-04/taro-react-tpl/taro-react-tpl-master/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev:h5" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$USER_HOME$/Documents/WeChat Files/wxid_00jb93elxufj22/FileStorage/File/2021-04/taro-react-tpl/taro-react-tpl-master/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev:weapp" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.dev:h5" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c83570e7-e3ea-498e-9a9e-246a319ed706" name="默认的" comment="" />
-      <created>1619510195414</created>
+      <changelist id="18e3dea2-04b4-4c7c-875e-29d48b6a0914" name="默认的" comment="" />
+      <created>1619594400826</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619510195414</updated>
-      <workItem from="1619510196543" duration="12633000" />
-      <workItem from="1619589398970" duration="3073000" />
+      <updated>1619594400826</updated>
+      <workItem from="1619594402174" duration="1382000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2344" y="410" key="#Stylelint" timestamp="1619590136120">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2344" y="410" key="#Stylelint/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619590136120" />
-    <state x="2435" y="259" width="876" height="492" key="FileChooserDialogImpl" timestamp="1619590134426">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2435" y="259" width="876" height="492" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619590134426" />
-    <state width="1897" height="257" key="GridCell.Tab.0.bottom" timestamp="1619592497800">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1897" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619592497800" />
-    <state width="1897" height="257" key="GridCell.Tab.0.center" timestamp="1619592497799">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1897" height="257" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619592497799" />
-    <state width="1897" height="257" key="GridCell.Tab.0.left" timestamp="1619592497799">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1897" height="257" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619592497799" />
-    <state width="1897" height="257" key="GridCell.Tab.0.right" timestamp="1619592497800">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1897" height="257" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619592497800" />
-    <state x="2330" y="212" width="983" height="655" key="find.popup" timestamp="1619591494570">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2330" y="212" width="983" height="655" key="find.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1619591494570" />
   </component>
 </project>

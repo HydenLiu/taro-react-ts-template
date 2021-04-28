@@ -4,3 +4,11 @@ deploy_versions/
 .rn_temp/
 node_modules/
 .DS_Store
+.idea/
+.vscode/
+.node_repl_history/
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+package.json
+npm-debug.log*

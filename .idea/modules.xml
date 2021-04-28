@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documents/WeChat Files/wxid_00jb93elxufj22/FileStorage/File/2021-04/taro-react-tpl/taro-react-tpl-master/.idea/taro-react-tpl-master.iml" filepath="$USER_HOME$/Documents/WeChat Files/wxid_00jb93elxufj22/FileStorage/File/2021-04/taro-react-tpl/taro-react-tpl-master/.idea/taro-react-tpl-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/taro-react-ts-template.iml" filepath="$PROJECT_DIR$/.idea/taro-react-ts-template.iml" />
     </modules>
   </component>
 </project>

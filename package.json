@@ -2,7 +2,7 @@
   "name": "taro-react-ts",
   "version": "1.0.0",
   "private": true,
-  "description": "taro小程序react模版",
+  "description": "{{ description }}",
   "templateInfo": {
     "name": "mobx",
     "typescript": true,
@@ -33,7 +33,7 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "",
+  "author": "{{ author }}",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
