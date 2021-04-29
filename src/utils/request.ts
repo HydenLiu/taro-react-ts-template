@@ -1,8 +1,8 @@
 import Taro from "@tarojs/taro";
 import { ENV, MAINHOST, DATA_CODE } from "@/config";
-import Api from "../config/api";
 import { getRouterUrlWithArgs } from "@/utils/common";
 import Tips from "@/utils/tips";
+import Api from "../config/api";
 
 interface Config {
   showErrTip?: boolean;
@@ -43,15 +43,15 @@ class Request {
    */
   static async http(
     {
-      url, 
-      data, 
-      method, 
+      url,
+      data,
+      method,
       config
     }: OptionTypes = {
-      url: '', 
-      method: 'GET', 
-      data: {}, 
-      config: { showErrTip: true, tipType: 1, server: 0}
+      url: '',
+      method: 'GET',
+      data: {},
+      config: {showErrTip: true, tipType: 1, server: 0}
     }
   ) {
 
@@ -60,13 +60,13 @@ class Request {
     }
 
     // 有些请求是不需要带token的 处理下
-    let header: any  = { 
+    let header: any = {
       "Content-Type": "application/json",
-      authority_token: this.getToken()
+      "x-auth-token": this.getToken()
     };
 
     const host =
-    config && config.server && typeof config.server === "number"
+      config && config.server && typeof config.server === "number"
         ? MAINHOST[config.server]
         : MAINHOST[0];
     let options: OptionTypes = {
@@ -98,7 +98,7 @@ class Request {
       // 请求错误
       const d = {
         ...res.data,
-        err: (res.data && res.data.message) || `服务器开小差，请稍后再试～`,
+        err: (res.data && res.data.message) || `系统繁忙，请稍后再试～`,
       };
 
       // 配置项：是否显示错误提示
@@ -166,7 +166,7 @@ class Request {
     this.isLogining = true;
     return new Promise(async (_, reject) => {
       // 获取code
-      const { code } = await Taro.login();
+      const {code} = await Taro.login();
 
       const loginParams = Taro.getStorageSync("login");
       const userInfo = Taro.getStorageSync("userInfo");
@@ -196,7 +196,7 @@ class Request {
         return this.loginTips(reject);
       } else {
         Taro.setStorageSync("token", res.data.authorityToken);
-        Taro.setStorageSync("userInfo", { ...res.data });
+        Taro.setStorageSync("userInfo", {...res.data});
       }
 
     })
