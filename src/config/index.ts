@@ -9,7 +9,7 @@ const ApiHost = {
 }
 
 export const ENV = 'QA';
-export const MAINHOST = [ApiHost[ENV]]
+export const MAINHOST = ApiHost[ENV]
 
 /**
  * http请求状态码
@@ -31,10 +31,5 @@ export const SHAREINFO = {
   'path': '/pages/index/index',
   // 'imageUrl': 'https://img02.fxqifu.com/welfare/2019/1560148820381cpe81jjk6s6.png'
 }
-
-/**
- * 客服电话
- */
-export const CONTRACTPHONE = '0571-81389117'
 
 

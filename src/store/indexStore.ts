@@ -2,6 +2,7 @@ import { makeAutoObservable, configure, runInAction } from 'mobx'
 import Request from '@/utils/request'
 import api from "@/config/api";
 import { IndexTypes } from '@/types/store/index.interface';
+
 configure({ enforceActions: 'observed' })
 
 const {} = api;

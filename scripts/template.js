@@ -56,6 +56,7 @@ const storeTep = `import { makeAutoObservable, configure, runInAction } from 'mo
 import Request from '@/utils/request'
 import api from "@/config/api";
 import { ${capPirName}Types } from '@/types/store/${dirName}.interface';
+
 configure({ enforceActions: 'observed' })
 
 const {} = api;

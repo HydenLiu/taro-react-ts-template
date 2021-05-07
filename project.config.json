@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "taro-react-tpl",
+  "projectname": "taro-react-ts",
   "description": "taro小程序react模版",
   "appid": "",
   "setting": {
