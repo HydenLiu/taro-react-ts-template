@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  projectName: 'taro-react-tpl',
+  projectName: 'taro-react-ts',
   date: '2021-4-25',
   designWidth: 750,
   deviceRatio: {

@@ -5,9 +5,6 @@
 const Api = {
   // 用户模块
   'user_post_login': '/login', // 登录
-
-  // 商品搜索接口命名示例如下
-  'search_get_goodsList': '/product/mall/search', // 搜索商品列表
 }
 
 

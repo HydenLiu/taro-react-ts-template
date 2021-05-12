@@ -2,13 +2,11 @@
  * @Description: 不同环境API地址
  */
 const ApiHost = {
-  MOCK: "http://api-doc.koudaiqifu.cn:9090/mock/xx", // mock地址
   DEV: "http://xxx", // 开发环境
-  QA: "https://xxx", // 测试环境
   PROD: "https://xxx", // 线上环境
 }
 
-export const ENV = 'QA';
+export const ENV = 'DEV';
 export const MAINHOST = ApiHost[ENV]
 
 /**

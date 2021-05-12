@@ -97,7 +97,7 @@ class Request {
       if (code == DATA_CODE.get('SUCCESS')) {
         return resolve(res.data.data);
       }
-      if (code === DATA_CODE.get('LOGIN_DATE') || code === DATA_CODE.get('LOGIN_DATE1')) {
+      if (code == DATA_CODE.get('LOGIN_DATE') || code == DATA_CODE.get('LOGIN_DATE1')) {
         const urlC = getRouterUrlWithArgs();
         await Taro.showModal({
           title: "提示",

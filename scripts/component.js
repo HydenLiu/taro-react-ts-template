@@ -4,7 +4,7 @@ const dirName = process.argv[2];
 const capPirName = dirName.substring(0, 1).toUpperCase() + dirName.substring(1);
 if (!dirName) {
   console.log('文件夹名称不能为空！');
-  console.log('示例：npm run tep test');
+  console.log('示例：npm run com test');
   process.exit(0);
 }
 
@@ -18,7 +18,7 @@ import './index.scss';
 const ${capPirName}: FC<${capPirName}Types> = (props: ${capPirName}Types) => {
 
   return (
-    <View className='${dirName}_wrap'>
+    <View className='${dirName}-wrap'>
 
     </View>
   )
