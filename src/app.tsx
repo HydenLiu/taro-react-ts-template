@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '@/utils/init.js';
+import '@/utils/init.ts';
 import './app.scss';
 
 class App extends Component {

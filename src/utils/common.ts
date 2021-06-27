@@ -36,7 +36,7 @@ export const verifyStr = (str, text) => {
  * @returns {array}
  */
 export function changeTree(val = []) {
-  val.forEach((item, index) => {
+  val.forEach((item: any) => {
     if (item.children && item.children.length > 0) {
       changeTree(item.children);
     }
@@ -46,11 +46,11 @@ export function changeTree(val = []) {
 
 /**
  * 格式化时间
- * @param data
+ * @param date
  * @returns {string}
  */
-export function formatTime(data, fmtType = "YYYY-MM-DD HH:mm:ss") {
-  return data ? dayjs(data).format(fmtType) : "";
+export function formatTime(date: dayjs.ConfigType | Date | string | number, fmtType = "YYYY-MM-DD HH:mm:ss") {
+  return date ? dayjs(date).format(fmtType) : "";
 }
 
 /**
@@ -67,7 +67,7 @@ export function getFileName(url = "") {
  * @param {HTMLElement} element
  * @param {string} className
  */
-export function toggleClass(element, className) {
+export function toggleClass(element: HTMLElement, className: string) {
   if (!element || !className) {
     return;
   }
@@ -92,7 +92,7 @@ export function toggleClass(element, className) {
 export function isContinuous(arr = [], key = "id") {
   return arr.every((item, index, array) => {
     if (index !== array.length - 1) {
-      return item[key] + 1 === array[index + 1].id;
+      return item[key] + 1 === array[index + 1][key];
     }
     return true;
   });
