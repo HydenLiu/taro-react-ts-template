@@ -5,7 +5,7 @@
 @import "./variables";
 @import "./mixins";
 
-// 解决移动端屏幕点击出现闪烁的阴影
+// 去除移动端屏幕点击出现闪烁的阴影
 page {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -13,88 +13,8 @@ page {
   color: $title-color;
 }
 
-.action-btn {
-  flex: 1;
-  height: 100px;
-  font-size: 28px;
-  line-height: 70px;
-  border: none;
-  border-radius: 0;
-  width: 100%;
-  color: #fff;
-
-  &-warning {
-    margin-left: 10px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    background: linear-gradient(90deg, rgba(252, 183, 77, 1) 0%, rgba(248, 100, 46, 1) 100%);
-  }
-
-  &-danger {
-    margin-right: 10px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    background: linear-gradient(90deg, rgba(248, 93, 44, 1) 0%, rgba(244, 13, 14, 1) 100%);
-
-    &.single {
-      border-radius: 40px;
-    }
-  }
-
-  &-error {
-    margin: 0 10px;
-    background: #ccc;
-    border-radius: 40px;
-  }
-}
 
 .#{$prefix} {
-  &-need-adapt {
-    padding-bottom: 68px !important;
-  }
-
-  &-empty {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
-
-    .iconlist-empty {
-      position: relative;
-      font-size: 200px;
-      color: #CCC;
-      width: 100%;
-      text-align: center;
-
-      &::after {
-        position: absolute;
-        bottom: -100px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 32px;
-        content: '暂时没有更多～';
-      }
-    }
-
-    .icon-market-empty {
-      position: relative;
-      font-size: 200px;
-      color: #CCC;
-      width: 100%;
-      text-align: center;
-
-      &::after {
-        position: absolute;
-        bottom: -100px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 32px;
-        content: '暂时没有更多信息哦～';
-      }
-    }
-  }
 
   &-loading {
     color: $color;
@@ -123,13 +43,6 @@ page {
       color: #fff !important;
       background: $color-brand-light !important;
       opacity: 0.5;
-    }
-  }
-
-  &-border-btn {
-
-    &[disabled] {
-
     }
   }
 
@@ -220,47 +133,6 @@ page {
     }
   }
 
-  // 清除浮动
-  &-clearfix:after,
-  &-clearfix:before {
-    display: table;
-    content: ' '
-  }
-
-  &-clearfix:after {
-    clear: both
-  }
-
-
-  // spot
-  &-remarks-spot {
-    display: table;
-    white-space: nowrap;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-
-    &::after,
-    &::before {
-      content: "•";
-      color: #999;
-      font-size: 30px;
-      display: table-cell;
-      position: relative;
-      top: 50%;
-      width: 50%;
-      padding: 0 .15rem;
-    }
-
-    &::before {
-      text-align: right;
-    }
-
-    &::after {
-      text-align: left;
-    }
-  }
-
   // 遮罩
   &-mask {
     position: fixed;
@@ -322,93 +194,6 @@ page {
     }
   }
 
-
-  // 上拉加载文字状态描述
-  &-load-type {
-    position: relative;
-
-    &-text {
-      width: 80%;
-      margin: 0 auto;
-      display: table;
-      white-space: nowrap;
-      height: auto;
-      overflow: hidden;
-      line-height: 1;
-      text-align: center;
-      padding: 40px 0;
-      color: #A6A6A6;
-      font-size: 28px;
-
-      &::after,
-      &::before {
-        content: '';
-        display: table-cell;
-        position: relative;
-        top: 50%;
-        width: 50%;
-        background-color: #ccc;
-        transform: scaleY(0.03);
-      }
-
-      Text {
-        padding: 0 50px;
-      }
-    }
-
-    .empty-box {
-      position: relative;
-      height: calc(100vh - 100px);
-      width: 100%;
-    }
-
-    .empty-wrap {
-      position: absolute;
-      top: 50%;
-      transform: translate3d(0, -60%, 0);
-      width: 100%;
-      text-align: center;
-
-      &-text {
-        display: inline-block;
-        width: 100%;
-        color: #A6A6A6;
-        font-size: 26px;
-        text-align: center;
-        padding-top: 30px;
-      }
-    }
-  }
-
-  &-load {
-    width: 80%;
-    margin: 0 auto;
-    display: table;
-    white-space: nowrap;
-    height: auto;
-    overflow: hidden;
-    line-height: 1;
-    text-align: center;
-    padding: 40px 0;
-    color: #A6A6A6;
-    font-size: 28px;
-
-    &::after,
-    &::before {
-      content: "";
-      display: table-cell;
-      position: relative;
-      top: 50%;
-      width: 50%;
-      background-color: #999;
-      transform: scaleY(0.03);
-    }
-
-    &-text {
-      padding: 0 80px;
-    }
-  }
-
   //下划线
   &-item-bottom-border {
     border-bottom: 1px solid WhiteSmoke;
@@ -437,16 +222,8 @@ page {
   }
 
   .component-fade-enter,
-  .component-fade-leave-to
-  /* .component-fade-leave-active for below version 2.1.8 */
-
-    {
+  .component-fade-leave-to {
     opacity: 0;
-  }
-
-  page {
-    width: 100%;
-    height: 100%;
   }
 
   // 最大宽度
@@ -454,202 +231,8 @@ page {
     width: 100%;
   }
 
-  // CSS3动画
-  @keyframes bounceIn {
-
-    from,
-    20%,
-    40%,
-    60%,
-    80%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    0% {
-      opacity: 0;
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    20% {
-      transform: scale3d(1.1, 1.1, 1.1);
-    }
-
-    40% {
-      transform: scale3d(0.9, 0.9, 0.9);
-    }
-
-    60% {
-      opacity: 1;
-      transform: scale3d(1.03, 1.03, 1.03);
-    }
-
-    80% {
-      transform: scale3d(0.97, 0.97, 0.97);
-    }
-
-    to {
-      opacity: 1;
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-
-  &-bounce-in {
-    animation-duration: 0.75s;
-    animation-name: bounceIn;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  &-fade-in {
-    animation-duration: 0.3s;
-    animation-name: fadeIn;
-  }
-
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0;
-    }
-  }
-
-  &-fade-out {
-    animation-duration: 0.3s;
-    animation-name: fadeOut;
-  }
-
-  @keyframes tada {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-
-    10%,
-    20% {
-      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    }
-
-    30%,
-    50%,
-    70%,
-    90% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    }
-
-    40%,
-    60%,
-    80% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    }
-
-    to {
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-  &-tada {
-    animation-duration: 1s;
-    animation-name: tada;
-  }
-
   &-hide {
     opacity: 0;
-  }
-
-  // 头像
-  // small
-  &-avatar-big,
-  &-avatar-small,
-  &-avatar-item,
-  &-avatar-default {
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: #eee;
-  }
-
-  &-avatar-small {
-    width: 64px;
-    height: 64px;
-  }
-
-  &-avatar-item {
-    width: 80px;
-    height: 80px;
-  }
-
-  // default
-  &-avatar-default {
-    width: 80px;
-    height: 80px;
-  }
-
-  // big
-  &-avatar-big {
-    width: 130px;
-    height: 130px;
-  }
-
-  &-shop-title {
-    font-size: 34px;
-    color: #333;
-    font-weight: 600;
-    padding: 16px 32px;
-  }
-
-  &-btn {
-    position: relative;
-    overflow: hidden;
-    opacity: 1;
-    transition: opacity 0.4s;
-
-    &:active {
-      opacity: 0.8;
-    }
-  }
-
-  &-list-shop-img {
-    @include img(120px, 120px);
-    margin-right: 24px;
-  }
-
-  &-list-shop-title {
-    @include colomnEllipsis(2);
-  }
-
-  &-list-shop-other {
-    text-align: right;
-    width: 100px;
-  }
-
-  &-list-shop-info {
-    min-height: 120px;
-  }
-
-  &-list-shop-amount {
-    .fx-icon {
-      margin-right: 10px;
-    }
-  }
-
-  &-list-shop-standard {
-    font-size: 20px;
-    color: #A6A6A6;
-    line-height: 24px;
-    padding: 10px 0;
-    margin-right: 100px;
   }
 }
 
